@@ -10,26 +10,21 @@ body {
 
 header {
     height: 40px;
-    min-width: 900px;
+    min-width: 1100px;
     display: flex;
-    flex-flow:row nowrap;
     align-items: center;
-    justify-content: center;
     padding: 30px;
     border-top: 5px solid  #42cfa2;
     box-shadow: 0px 0px 20px rgb(185, 185, 185);
 }
 
 .left-section {
-    height: 100%;
     display:flex;
-    flex-flow:row nowrap;
     align-items: center;
     flex-grow: 7;
 }
 
 .left-section .logo:link {
-    width: 200px;
     text-decoration: none;
     font-weight: bold;
     color: black;
@@ -39,11 +34,9 @@ header {
 }
 
 .left-section nav {
-    height: 100%;
     flex-grow: 6;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .left-section nav a {
@@ -68,7 +61,6 @@ header {
 
 .phone {
     width: 200px;
-    text-align: right;
     flex-grow: 3;
     display: flex;
     white-space: nowrap;
@@ -96,7 +88,6 @@ article {
     border: 1px solid lightgray;
     border-radius: 10px;
     padding: 20px;
-    text-align: left;
 }
 
 .firstArticle {
@@ -106,10 +97,8 @@ article {
 .firstArticle:hover {
 
     box-shadow: 0px 1px 17px -3px #42cfa2;
-    -webkit-transform: translateX(-3px) scale(1);
-    transform: translateX(-3px)
-               scale(1.1);
-
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
 }
 
 .secondArticle {
@@ -120,17 +109,20 @@ article {
 @-webkit-keyframes secondArticle {
     30% {
         -webkit-transform: skewY(1deg);
+        -ms-transform: skewY(1deg);
         transform: skewY(1deg);
     }
 
     50% {
         -webkit-transform: skewY(2deg);
+        -ms-transform: skewY(2deg);
         transform: skewY(2deg);
     }
 
 
     100% {
         -webkit-transform: skewY(3deg);
+        -ms-transform: skewY(3deg);
         transform: skewY(3deg);
     }
 }
@@ -138,31 +130,46 @@ article {
 @keyframes secondArticle {
     30% {
         -webkit-transform: skewY(1deg);
+        -ms-transform: skewY(1deg);
         transform: skewY(1deg);
     }
 
     50% {
         -webkit-transform: skewY(2deg);
+        -ms-transform: skewY(2deg);
         transform: skewY(2deg);
     }
 
 
     100% {
         -webkit-transform: skewY(3deg);
+        -ms-transform: skewY(3deg);
         transform: skewY(3deg);
     }
 
 }
+
 .secondArticle:hover
-        {
-            -webkit-animation: secondArticle 0.5s ease;
-            animation: secondArticle 0.5s ease;
-            -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-            box-shadow: 0px 1px 17px -3px #42cfa2;
-            -webkit-transform: translateX(-3px);
-            transform: translateX(-3px);
-        }
+{
+    -webkit-animation: secondArticle 0.5s ease;
+    animation: secondArticle 0.5s ease;
+    -webkit-animation-iteration-count: 1;
+     animation-iteration-count: 1;
+    box-shadow: 0px 1px 17px -3px #42cfa2;
+    -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.thridArticle {
+    transition:all 0.3s ease;
+}
+
+.thridArticle:hover {
+    box-shadow: 0px 1px 17px -3px #42cfa2;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
 
 svg {
     color: rgb(76, 76, 158);
