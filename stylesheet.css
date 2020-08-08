@@ -90,18 +90,18 @@ article {
     padding: 20px;
 }
 
-.firstArticle {
+article:first-child {
     transition: all 0.3s ease;
 }
 
-.firstArticle:hover {
+article:first-child:hover {
 
     box-shadow: 0px 1px 17px -3px #42cfa2;
     -webkit-transform: scale(1);
     transform: scale(1.1);
 }
 
-.secondArticle {
+article:nth-child(2) {
     margin: 0px 40px;
     transition: animation 0.2s ease;
 }
@@ -149,7 +149,7 @@ article {
 
 }
 
-.secondArticle:hover
+article:nth-child(2):hover
 {
     -webkit-animation: secondArticle 0.5s ease;
     animation: secondArticle 0.5s ease;
@@ -160,11 +160,11 @@ article {
         transform: translateX(-3px);
 }
 
-.thridArticle {
+article:last-child {
     transition:all 0.3s ease;
 }
 
-.thridArticle:hover {
+article:last-child:hover {
     box-shadow: 0px 1px 17px -3px #42cfa2;
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
